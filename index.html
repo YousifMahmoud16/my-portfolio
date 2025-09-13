@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Yousif</span></h1>
+            <p>Aspiring Web Developer & Future Doctor</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m a student passionate about technology and design. I create simple, elegant websites and I’m learning
+                to improve step by step.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section dark">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Restaurant Demo</h3>
+                    <p>A simple restaurant website built with HTML, CSS, and JS.</p>
+                    <a href="https://my-restaurant-demo.netlify.app" target="_blank" class="btn small">View</a>
+                </div>
+                <div class="card">
+                    <h3>Portfolio Demo</h3>
+                    <p>This very site showcasing my personal work.</p>
+                    <a href="#" class="btn small">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/xdklbweq" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your name" required />
+                <input type="email" name="_replyto" placeholder="Your email" required />
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <p class="small"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
