@@ -4,19 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Yousif | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">Yousif<span class="accent">.</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -24,19 +31,90 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Yousif</span></h1>
-            <p>Aspiring Web Developer & Future Doctor</p>
-            <a href="#projects" class="btn">View My Work</a>
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>Hello, I'm <span class="highlight">Yousif</span></h1>
+            <p class="subtitle">Aspiring Web Developer </p>
+            <a href="#projects" class="btn">See My Projects</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-text" data-aos="fade-right">
+                <h2>About Me</h2>
+                <p>
+                    I'm a high school student passionate about technology, design, and problem solving.
+                    I enjoy building clean, simple websites and I'm on my journey to becoming both a
+                    <strong>doctor</strong> and a
+                    <strong>developer</strong>.
+                </p>
+            </div>
+            <div class="about-img" data-aos="fade-left">
+                <img src="/images/undraw_web-design-showcase_6t2l.webp" alt="Yousif profile" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section dark">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I’m a student passionate about technology and design. I create simple, elegant websites and I’m learning
-                to improve step by step.</p>
+            <h2>What I Do</h2>
+            <div class="grid">
+                <div class="card" data-aos="fade-up">
+                    <i class="fas fa-code fa-2x accent"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive, fast, and modern websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-pencil-ruler fa-2x accent"></i>
+                    <h3>Web Design</h3>
+                    <p>Designing clean and user-friendly interfaces that make an impact.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-search fa-2x accent"></i>
+                    <h3>SEO</h3>
+                    <p>Optimizing websites for better ranking and visibility on search engines.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-bullhorn fa-2x accent"></i>
+                    <h3>Branding</h3>
+                    <p>Helping small projects and startups create a strong digital presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill" data-aos="fade-right">
+                    <span>HTML</span>
+                    <div class="progress">
+                        <div style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="100">
+                    <span>CSS</span>
+                    <div class="progress">
+                        <div style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="300">
+                    <span>React</span>
+                    <div class="progress">
+                        <div style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -45,17 +123,52 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="grid">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <h3>Restaurant Demo</h3>
-                    <p>A simple restaurant website built with HTML, CSS, and JS.</p>
-                    <a href="https://my-restaurant-demo.netlify.app" target="_blank" class="btn small">View</a>
+                    <p>A responsive restaurant website made with HTML, CSS, and JavaScript.</p>
+                    <a href="https://my-restaurant-demo.netlify.app" target="_blank" class="btn small">View Project</a>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
                     <h3>Portfolio Demo</h3>
-                    <p>This very site showcasing my personal work.</p>
-                    <a href="#" class="btn small">View</a>
+                    <p>This very site showcasing my personal work, skills, and growth as a developer.</p>
+                    <a href="#" class="btn small">View Project</a>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Next Project</h3>
+                    <p>Stay tuned for more projects — I’m always learning and building!</p>
+                    <a href="#" class="btn small disabled">Coming Soon</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="grid">
+                <div class="card" data-aos="flip-left">
+                    <p>"Yousif is dedicated, creative, and always eager to learn. A bright future ahead!"</p>
+                    <h4>- Teacher</h4>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="100">
+                    <p>"Amazing attention to detail. His websites are clean and professional."</p>
+                    <h4>- Classmate</h4>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-delay="200">
+                    <p>"Very hardworking and talented. Highly recommend collaborating with him."</p>
+                    <h4>- Friend</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-content" data-aos="zoom-in">
+            <h2>Let's Work Together</h2>
+            <p>Looking for a fresh perspective on your project? I'm ready to help.</p>
+            <a href="#contact" class="btn">Hire Me</a>
         </div>
     </section>
 
@@ -63,21 +176,26 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <form action="https://formspree.io/f/xdklbweq" method="POST" class="contact-form">
+            <p class="center-text">Let's work together! Send me a message below:</p>
+            <form action="https://formspree.io/f/xdklbweq" method="POST" class="contact-form" data-aos="fade-up">
                 <input type="text" name="name" placeholder="Your name" required />
                 <input type="email" name="_replyto" placeholder="Your email" required />
                 <textarea name="message" placeholder="Your message"></textarea>
                 <button type="submit" class="btn">Send</button>
             </form>
-            <p class="small"></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 My Portfolio</p>
+        <p>&copy; 2025 Yousif | Built with ❤️ using HTML & CSS</p>
     </footer>
 
+    <!-- AOS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
     <script src="script.js"></script>
 </body>
 
